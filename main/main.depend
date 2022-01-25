@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1643136560 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
+	"acervo.h"
+
+1643138633 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
+	<string>
+	<iostream>
+
+1643138311 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
+	<iostream>
+	<list>
+	"Obra.h"
+
+1643140300 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\obra.h
+	<string>
+	<iostream>
+
+1643137793 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\autor.cpp
+	"Autor.h"
+
+1643139331 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\autor.h
+	<string>
+	<iostream>
+
+1643136629 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
+	"Modelo.h"
+
+1643139434 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
+	<string>
+	<iostream>
+
+1643137658 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\assunto.cpp
+	"Assunto.h"
+
+1643139516 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\assunto.h
+	<string>
+	<iostream>
+
+1643140290 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\obra.cpp
+	"Obra.h"
+
