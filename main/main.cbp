@@ -35,13 +35,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Assunto.h" />
-		<Unit filename="include/Autor.h" />
 		<Unit filename="include/Modelo.h" />
 		<Unit filename="include/Obra.h" />
 		<Unit filename="include/acervo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Assunto.cpp" />
-		<Unit filename="src/Autor.cpp" />
 		<Unit filename="src/Modelo.cpp" />
 		<Unit filename="src/Obra.cpp" />
 		<Unit filename="src/acervo.cpp" />

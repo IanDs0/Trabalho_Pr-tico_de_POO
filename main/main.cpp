@@ -2,17 +2,37 @@
 #include <list>
 
 #include "Obra.h"
+#include "Assunto.h"
+#include "Modelo.h"
 
 using namespace std;
 
 int main()
 {
-    /*Obra *A = new Obra();
+    /*
+    Obra *A = new Obra();
     A->Add_Obra();
-    A->Print_Obra();*/
+    A->Print_Obra();
 
 
-    	list<int> lista;
+    Assunto *A = new Assunto();
+    A->Add_Assunto();
+    A->Print_Assunto();
+
+    */
+
+    Modelo *A = new Modelo();
+    A->Add_Modelo();
+    A->Print_Modelo();
+
+    cout << "Olá mundo" << endl;
+
+    return 0;
+}
+
+/*
+
+    list<int> lista;
 	list<int>::iterator it;
 	for(int i=0;i<5;i++){
 		lista.push_back(i);
@@ -29,12 +49,7 @@ int main()
     //printa o tamanho da lista na tela, que é igual a 10
 
 	for(it = lista.begin(); it!=lista.end();it++){
-		//printa os numeros pares começando do inicio da lista
-
         cout << *it << endl;
-
 	}
-cout << "Olá mundo" << endl;
 
-    return 0;
-}
+*/

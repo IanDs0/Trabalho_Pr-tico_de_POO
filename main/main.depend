@@ -6,12 +6,14 @@
 	<string>
 	<iostream>
 
-1643138311 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
+1643162776 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
 	<iostream>
 	<list>
 	"Obra.h"
+	"Assunto.h"
+	"Modelo.h"
 
-1643140300 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\obra.h
+1643146017 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\obra.h
 	<string>
 	<iostream>
 
@@ -22,20 +24,25 @@
 	<string>
 	<iostream>
 
-1643136629 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
+1643165379 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
 	"Modelo.h"
 
-1643139434 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
+1643165350 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
 	<string>
+	<list>
 	<iostream>
+	"Obra.h"
+	"Assunto.h"
+	"Modelo.h"
 
-1643137658 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\assunto.cpp
+1643148148 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\assunto.cpp
 	"Assunto.h"
 
-1643139516 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\assunto.h
+1643148095 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\assunto.h
 	<string>
+	<list>
 	<iostream>
 
-1643140290 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\obra.cpp
+1643163925 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\obra.cpp
 	"Obra.h"
 

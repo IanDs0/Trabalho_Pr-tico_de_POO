@@ -12,9 +12,12 @@ class Autor
         Autor();
         virtual ~Autor();
 
+        void Add_autor
+
     private:
-        string Nome_autor;/*[Num_autores];
-        int Num_autores;*/
+
+        list<string> Nome_autor;//cria uma lista dinamica
+        list<string>::iterator it;//serve para printar os valores da lista
 };
 
 #endif // AUTOR_H
