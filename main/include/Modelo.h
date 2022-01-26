@@ -24,6 +24,7 @@ class Modelo:public Assunto, public Obra
         void Add_ISBN();
 
         void Add_Modelo();
+        Modelo Add_Modelo_R();
 
         void Print_Modelo();
 

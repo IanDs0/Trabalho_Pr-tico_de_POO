@@ -129,12 +129,20 @@ void Modelo::Add_Modelo(){
     Add_CDU();
 }
 
+Modelo Modelo::Add_Modelo_R(){
+
+    Modelo *A = new Modelo();
+    A->Add_Modelo();
+
+    return *A;
+}
+
 
 void Modelo::Print_Modelo(){
 
     int i=1;
 
-    cout<<"\n\n\n\n\n\n\n\n\n\n\n";
+    cout<<"\n\n\n";
 
     for(Na = Nome_autor.begin(); Na!=Nome_autor.end();Na++){
         cout << i << ". Autor(a): " << *Na <<".  ";

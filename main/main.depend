@@ -1,17 +1,25 @@
 # depslib dependency file v1.0
-1643136560 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
+1643235791 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
 	"acervo.h"
 
-1643138633 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
+1643235360 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
+	"Modelo.h"
+	"Usuario.h"
 	<string>
+	<list>
+	<vector>
 	<iostream>
 
-1643162776 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
+1643236087 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
 	<iostream>
 	<list>
+	<vector>
+	<conio.h>
 	"Obra.h"
 	"Assunto.h"
 	"Modelo.h"
+	"Usuario.h"
+	"acervo.h"
 
 1643146017 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\obra.h
 	<string>
@@ -24,10 +32,10 @@
 	<string>
 	<iostream>
 
-1643165379 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
+1643235790 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
 	"Modelo.h"
 
-1643165350 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
+1643233033 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
 	<string>
 	<list>
 	<iostream>
@@ -35,7 +43,7 @@
 	"Assunto.h"
 	"Modelo.h"
 
-1643148148 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\assunto.cpp
+1643165664 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\assunto.cpp
 	"Assunto.h"
 
 1643148095 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\assunto.h
@@ -45,4 +53,13 @@
 
 1643163925 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\obra.cpp
 	"Obra.h"
+
+1643229270 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\usuario.h
+	<string>
+	<list>
+	<iostream>
+	<conio.h>
+
+1643229556 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\usuario.cpp
+	"Usuario.h"
 

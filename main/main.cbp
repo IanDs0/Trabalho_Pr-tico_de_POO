@@ -37,11 +37,13 @@
 		<Unit filename="include/Assunto.h" />
 		<Unit filename="include/Modelo.h" />
 		<Unit filename="include/Obra.h" />
+		<Unit filename="include/Usuario.h" />
 		<Unit filename="include/acervo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Assunto.cpp" />
 		<Unit filename="src/Modelo.cpp" />
 		<Unit filename="src/Obra.cpp" />
+		<Unit filename="src/Usuario.cpp" />
 		<Unit filename="src/acervo.cpp" />
 		<Extensions />
 	</Project>
