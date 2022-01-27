@@ -29,7 +29,7 @@ void Obra::Add_Obra(){
 
     cout << "Digite Editora da Obra: "; cin >> this->Editora;
 
-    cout << "Digite o ano de lançamento da Obra: "; cin >> this->Ano;
+    cout << "Digite o ano de lanï¿½amento da Obra: "; cin >> this->Ano;
 
     cout << "Digite o numero de paginas da Obra: "; cin >> this->Num_pag;
 

@@ -11,8 +11,13 @@
 
 using namespace std;
 
+//login admin
+//senha 1q2w3e
+
 int main()
 {
+    int poss=0;
+
     /*
     Obra *A = new Obra();
     A->Add_Obra();
@@ -33,18 +38,44 @@ int main()
     A->Add_Pessoa();
     A->Print_Pessoa();
 
-    */
 
     acervo *A = new acervo();
-    A->Add_acervo();
-    A->Print_acervo();
+    A->Add_Usuario();
+    A->Print_Usuario();
+
+    int achar = A->Procura_Usuario(&poss);
+
+    cout << "\nPoss: " << poss;
+
+    if(achar == 0){
+        cout << "\nNão achou" << endl;
+    }else if(achar == 1){
+        cout << "\nPessoa" << endl;
+    }else{
+        cout << "\nRoot" << endl;
+    }
+    */
+
+    Usuario *A = new Usuario();
+    A->Add_Emprestimo();
+    A->Add_Emprestimo();
+
+    A->Printa_Emprestimo();
+
+    A->Remove_Emprestimo();
+
+    A->Printa_Emprestimo();
+
+    A->Remove_Emprestimo();
+
+    A->Printa_Emprestimo();
 
     //22-4444-333-1
     //333.22:333.22
 
 
 
-    cout << "Olá mundo" << endl;
+    cout << "\nOlá mundo" << endl;
 
     return 0;
 }

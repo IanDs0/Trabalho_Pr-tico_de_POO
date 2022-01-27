@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class acervo: public Modelo
+class acervo: public Modelo, public Usuario
 {
     public:
         acervo();
@@ -19,11 +19,18 @@ class acervo: public Modelo
 
         void Add_acervo();
         void Print_acervo();
+
+        void Add_Usuario();
+        void Print_Usuario();
+
+        int Procura_Usuario(int *p);//0)Não 1)Pessoa 2)Root
+
         void Remove_1();
         void Adiciona_1();
 
     private:
 
+        vector<Usuario> Usuarios_Bi;//cria uma array dinamico
         vector<Modelo> Biblioteca;//cria uma array dinamico
 };
 
