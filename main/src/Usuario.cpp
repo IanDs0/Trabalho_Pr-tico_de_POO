@@ -91,10 +91,10 @@ void Usuario::Add_Pessoa(){
 
 void Usuario::Add_Pessoa_Procura(){
 
-    cout << "\nDigite o nome de Usuário a ser cadastrado: ";
+    cout << "\nDigite o nome de Usuário: ";
     getline(cin,this->Name);
 
-    cout << "\nDigite a Senha do Usuario as ser cadastrado: ";
+    cout << "\nDigite a Senha do Usuario: ";
     this->Password = Camufla_senha();
 
     this->Tipo=-1;
@@ -171,6 +171,8 @@ void Usuario::Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo){
 
 }
 
+
+
 void Usuario::Remove_Emprestimo(){//test como parametro
 
     int verifica = 0,i = 0,tam = Empre.size();
@@ -204,15 +206,17 @@ void Usuario::Remove_Emprestimo(){//test como parametro
 
 }
 
-void Usuario::Printa_Emprestimo(){//tem q ser um get para fazer pazer um print melhor
-
+vector<Emprestimo> Usuario::Printa_Emprestimo(){
+/*
     int i = 0,tam = Empre.size();
 
     for(i=0;i<tam;i++){
 
         Empre[i].Print_Emprestimo();
     }
-
+*/
+    vector<Emprestimo> A = Empre;
+    return A;
 }
 
 

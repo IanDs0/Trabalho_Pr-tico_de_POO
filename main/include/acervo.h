@@ -3,6 +3,7 @@
 
 #include "Modelo.h"
 #include "Usuario.h"
+#include "Emprestimo.h"
 
 #include <string>
 #include <list>
@@ -11,14 +12,14 @@
 
 using namespace std;
 
-class acervo: public Modelo, public Usuario
+class acervo: public Modelo, public Usuario, public Emprestimo
 {
     public:
         acervo();
         virtual ~acervo();
 
         void Add_acervo();
-        void Print_acervo();
+        void Print_acervo();//fazer entre ficha catalografica e tudo///////////////
 
         void Add_Usuario();
         void Add_Usuario_root();
@@ -26,11 +27,13 @@ class acervo: public Modelo, public Usuario
 
         int Procura_Usuario(int *p);//0)Não 1)Pessoa 2)Root
 
-        void Remove_1(int pos);
-        void Adiciona_1(int pos);
+        void Adiciona_1(int pos);//add novos tipos de busca///////////////
         void Printa_Emprestimo(int pos);
         int Procura_Emprestimo();
-        int Procura_Usuarios(int pos);
+        void Procura_livro();//add novos tipos de busca/////////////
+
+        void Remove_1(int pos);//terminar
+        int Procura_Usuarios(int pos);//terminar
 
     private:
 

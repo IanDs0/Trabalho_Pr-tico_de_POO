@@ -13,12 +13,15 @@ void acervo::Add_acervo(){
 
 void acervo::Print_acervo(){
 
-    for(int i=0;i < Biblioteca.size(); i++){
+    int tam = Biblioteca.size();
 
-        Biblioteca[i].Print_Modelo();
-
+    if(tam>0){
+        for(int i=0;i < tam; i++){
+            Biblioteca[i].Print_Modelo();
+        }
+    }else{
+        cout << "\nBiblioteca vazia" << endl;
     }
-
 }
 
 
@@ -65,11 +68,11 @@ int acervo::Procura_Usuario(int *p){
     return 0;
 }
 
-int acervo::Procura_Usuarios(int pos){
+int acervo::Procura_Usuarios(int pos){//terminar
 
 }
 
-void acervo::Remove_1(int pos){
+void acervo::Remove_1(int pos){//terminar
 
     //cout << Procura_Usuarios();
 
@@ -139,15 +142,27 @@ void acervo::Adiciona_1(int pos){
 
 }
 
+void acervo::Procura_livro(){
+
+    int poss = Procura_Emprestimo();
+
+    Biblioteca[poss].Print_Modelo();
+
+}
+
 void acervo::Printa_Emprestimo(int pos){
 
     cout << "O usuário na poss: " << pos << endl;
 
-    int tam = Usuarios_Bi.size();
+    vector<Emprestimo> poss;
 
-    for(int i=0; i<tam ;i++){
+    //int tam = Usuarios_Bi[pos].size();
 
-        Usuarios_Bi[i].Printa_Emprestimo();
+    poss = Usuarios_Bi[pos].Printa_Emprestimo();
+
+    for(int i=0; i<poss.size() ;i++){
+
+        Biblioteca[poss[i].Get_poss()].Print_Modelo();
 
     }
 }

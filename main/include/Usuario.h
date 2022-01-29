@@ -21,9 +21,9 @@ class Usuario: public Emprestimo
         Usuario Add_Pessoa_R();
         void Add_Pessoa_Procura();
 
-        void Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo);//parametro
+        void Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo);
         void Remove_Emprestimo();//parametro
-        void Printa_Emprestimo();///
+        vector<Emprestimo> Printa_Emprestimo();
 
         string Camufla_senha();
         int Get_Tipo();

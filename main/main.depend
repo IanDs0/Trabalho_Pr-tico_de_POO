@@ -1,16 +1,17 @@
 # depslib dependency file v1.0
-1643411349 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
+1643486370 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
 	"acervo.h"
 
-1643411431 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
+1643486423 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
 	"Modelo.h"
 	"Usuario.h"
+	"Emprestimo.h"
 	<string>
 	<list>
 	<vector>
 	<iostream>
 
-1643414301 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
+1643486918 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\main.cpp
 	<iostream>
 	<list>
 	<vector>
@@ -54,7 +55,7 @@
 1643300003 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\obra.cpp
 	"Obra.h"
 
-1643411313 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\usuario.h
+1643486126 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\usuario.h
 	<string>
 	<list>
 	<vector>
@@ -62,7 +63,7 @@
 	<conio.h>
 	"Emprestimo.h"
 
-1643413648 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\usuario.cpp
+1643486116 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\usuario.cpp
 	"Usuario.h"
 
 1643401610 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\emprestimo.h
