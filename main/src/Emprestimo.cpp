@@ -6,7 +6,6 @@ Emprestimo::Emprestimo(){
 Emprestimo::~Emprestimo(){
 }
 
-
 void Emprestimo::Add_Parametro(Emprestimo Emp){
 
     this->Poss_Emprestimo = Emp.Poss_Emprestimo;
@@ -24,6 +23,13 @@ void Emprestimo::Add_Emprestimo(){
     cout << "\nQuantidade: ";
     cin >> this->Quantidade_Emprestimo;
     fflush(stdin);
+
+}
+
+void Emprestimo::Add_Emprestimo_P(int P_Emprestimo, int Q_Emprestimo){
+
+    this->Poss_Emprestimo = P_Emprestimo;
+    this->Quantidade_Emprestimo = Q_Emprestimo;
 
 }
 

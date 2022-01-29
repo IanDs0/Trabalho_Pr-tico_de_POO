@@ -19,7 +19,11 @@ string Usuario::Camufla_senha(){
         ++i;
     }
 
-    return SENHA = senha;
+    SENHA = senha;
+
+    SENHA.pop_back();
+
+    return SENHA;
 }
 
 int Usuario::Get_Tipo(){
@@ -137,12 +141,12 @@ int Usuario::Procura_Usuario(Usuario *U){
 }
 
 
-void Usuario::Add_Emprestimo(){//test como parametro
+void Usuario::Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo){
 
     int verifica = 0,i = 0,tam = Empre.size();
 
     Emprestimo *test = new Emprestimo();
-    test->Add_Emprestimo();
+    test->Add_Emprestimo_P(P_Emprestimo, Q_Emprestimo);
 
     if(tam>0){
 
@@ -209,4 +213,22 @@ void Usuario::Printa_Emprestimo(){//tem q ser um get para fazer pazer um print m
         Empre[i].Print_Emprestimo();
     }
 
+}
+
+
+
+void Usuario::Pessoa_root(){
+
+    this->Name = "root";
+    this->Password = "123456";
+    this->Tipo = 0;
+
+}
+
+Usuario Usuario::Add_root(){
+
+    Usuario *A = new Usuario();
+    A->Pessoa_root();
+
+    return *A;
 }

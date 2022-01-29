@@ -21,12 +21,16 @@ class acervo: public Modelo, public Usuario
         void Print_acervo();
 
         void Add_Usuario();
+        void Add_Usuario_root();
         void Print_Usuario();
 
         int Procura_Usuario(int *p);//0)Não 1)Pessoa 2)Root
 
-        void Remove_1();
-        void Adiciona_1();
+        void Remove_1(int pos);
+        void Adiciona_1(int pos);
+        void Printa_Emprestimo(int pos);
+        int Procura_Emprestimo();
+        int Procura_Usuarios(int pos);
 
     private:
 

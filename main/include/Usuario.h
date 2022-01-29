@@ -21,9 +21,9 @@ class Usuario: public Emprestimo
         Usuario Add_Pessoa_R();
         void Add_Pessoa_Procura();
 
-        void Add_Emprestimo();
-        void Remove_Emprestimo();
-        void Printa_Emprestimo();
+        void Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo);//parametro
+        void Remove_Emprestimo();//parametro
+        void Printa_Emprestimo();///
 
         string Camufla_senha();
         int Get_Tipo();
@@ -32,6 +32,9 @@ class Usuario: public Emprestimo
 
         void Print_Pessoa();
         int Procura_Usuario(Usuario *U);//0)Não 1)Pessoa 2)Root
+
+        void Pessoa_root();
+        Usuario Add_root();
 
     private:
         string Name;

@@ -15,6 +15,7 @@ class Emprestimo
         int Get_quanti();
 
         void Add_Parametro(Emprestimo Emp);
+        void Add_Emprestimo_P(int P_Emprestimo, int Q_Emprestimo);
         void Add_Emprestimo();
         void Print_Emprestimo();
 

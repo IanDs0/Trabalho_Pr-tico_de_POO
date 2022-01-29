@@ -161,3 +161,11 @@ void Modelo::Print_Modelo(){
     cout<<"\n";
 	cout << "\n\t\t\tCDU:  " << CDU << endl;
 }
+
+string Modelo::Get_CDU(){
+
+    cout << "CDU:  " << CDU << endl;
+    return CDU;
+
+}
+

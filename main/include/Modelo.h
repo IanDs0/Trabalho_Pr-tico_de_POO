@@ -23,6 +23,8 @@ class Modelo:public Assunto, public Obra
         void Add_CDU();
         void Add_ISBN();
 
+        string Get_CDU();
+
         void Add_Modelo();
         Modelo Add_Modelo_R();
 
