@@ -2,52 +2,6 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="include\Obra.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="564" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="include\acervo.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="835" topLine="19" />
-		</Cursor>
-	</File>
-	<File name="include\Emprestimo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="144" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Modelo.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3394" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="2" />
-			<Collapse line="5" />
-			<Collapse line="9" />
-			<Collapse line="31" />
-			<Collapse line="69" />
-			<Collapse line="107" />
-			<Collapse line="131" />
-			<Collapse line="140" />
-		</Folding>
-	</File>
-	<File name="include\Usuario.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="548" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1467" topLine="54" />
-		</Cursor>
-		<Folding>
-			<Collapse line="26" />
-			<Collapse line="91" />
-			<Collapse line="108" />
-			<Collapse line="203" />
-		</Folding>
-	</File>
 	<File name="src\Obra.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="21" topLine="0" />
@@ -58,6 +12,21 @@
 			<Collapse line="21" />
 			<Collapse line="40" />
 		</Folding>
+	</File>
+	<File name="include\acervo.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="835" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="include\Modelo.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="492" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="include\Assunto.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="335" topLine="2" />
+		</Cursor>
 	</File>
 	<File name="src\Emprestimo.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
 		<Cursor>
@@ -75,9 +44,9 @@
 			<Collapse line="47" />
 		</Folding>
 	</File>
-	<File name="include\Assunto.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+	<File name="include\Usuario.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="335" topLine="2" />
+			<Cursor1 position="548" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\acervo.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
@@ -97,6 +66,54 @@
 			<Collapse line="74" />
 			<Collapse line="89" />
 		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1467" topLine="30" />
+		</Cursor>
+		<Folding>
+			<Collapse line="26" />
+			<Collapse line="91" />
+			<Collapse line="108" />
+			<Collapse line="203" />
+		</Folding>
+	</File>
+	<File name="src\Assunto.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="42" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
+			<Collapse line="5" />
+			<Collapse line="8" />
+			<Collapse line="31" />
+			<Collapse line="43" />
+		</Folding>
+	</File>
+	<File name="src\Modelo.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3394" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="2" />
+			<Collapse line="5" />
+			<Collapse line="9" />
+			<Collapse line="31" />
+			<Collapse line="69" />
+			<Collapse line="107" />
+			<Collapse line="131" />
+			<Collapse line="140" />
+		</Folding>
+	</File>
+	<File name="include\Obra.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="564" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include\Emprestimo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="144" topLine="0" />
+		</Cursor>
 	</File>
 	<File name="src\Usuario.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
@@ -119,22 +136,5 @@
 			<Collapse line="208" />
 			<Collapse line="231" />
 		</Folding>
-	</File>
-	<File name="src\Assunto.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="42" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="2" />
-			<Collapse line="5" />
-			<Collapse line="8" />
-			<Collapse line="31" />
-			<Collapse line="43" />
-		</Folding>
-	</File>
-	<File name="include\Modelo.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="492" topLine="7" />
-		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
