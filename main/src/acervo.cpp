@@ -17,7 +17,7 @@ void acervo::Print_acervo(){
 
     if(tam>0){
         for(int i=0;i < tam; i++){
-            Biblioteca[i].Print_Modelo();
+            Biblioteca[i].Print_Modelo_Completo();
         }
     }else{
         cout << "\nBiblioteca vazia" << endl;
@@ -74,16 +74,62 @@ int acervo::Procura_Usuario(int *p){
     return 0;
 }
 
-int acervo::Procura_Usuarios(int pos){//terminar
-    return 0;
-}
-
 void acervo::Remove_1(int pos){//terminar
 
-    //cout << Procura_Usuarios();
+    int tam,i,Onde_livro=0, Quant=0;
 
-    //Usuarios_Bi[pos].Remove_Emprestimo();
+    vector<Emprestimo> poss;
 
+    poss = Usuarios_Bi[pos].Printa_Emprestimo();
+
+    tam = poss.size();
+
+    for(i=0; i<tam ;i++){
+
+        cout << "\nOpcao a devolver [" << i+1 << "]:\n";
+        Biblioteca[poss[i].Get_poss()].Print_Modelo();
+
+    }
+
+    cout << "\n0) Devolver todas opcoes \n1)Para devolver apenas uma destas opcoes\n";
+    fflush(stdin);
+    cin >> i;
+
+    if(i == 0){
+
+        for(i=0;i <tam ; i++){
+
+            Usuarios_Bi[pos].Remove_Emprestimo(poss[i].Get_poss(), poss[i].Get_quanti());
+            Biblioteca[poss[Onde_livro].Get_poss()].Devolve_Livro(poss[i].Get_quanti());
+
+        }
+
+    }else if(i == 1){
+
+        do{
+
+            cout << "\nDigite o numero da obra que deseja devolver: ";
+            fflush(stdin);
+            cin >> Onde_livro;
+
+        }while(Onde_livro < 1 || Onde_livro > tam);
+
+        Onde_livro -= 1;
+
+        do{
+            cout << "\nDigite a quantidade desta obra a ser devolvida: ";
+            fflush(stdin);
+            cin >> Quant;
+        }while(Quant > poss[Onde_livro].Get_quanti()+1 || Quant < 0);
+
+        Usuarios_Bi[pos].Remove_Emprestimo(poss[Onde_livro].Get_poss(), Quant);
+        Biblioteca[poss[Onde_livro].Get_poss()].Devolve_Livro(Quant);
+
+    }else{
+
+        cout << "\nValor invalido\n";
+
+    }
 }
 
 int acervo::Procura_Emprestimo(){
@@ -178,7 +224,7 @@ void acervo::Printa_Emprestimo(int pos){
 
     int tam,i;
 
-    cout << "O usuário na poss: " << pos << endl;
+    cout << endl;
 
     vector<Emprestimo> poss;
 

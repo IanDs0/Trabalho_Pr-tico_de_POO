@@ -173,12 +173,12 @@ void Usuario::Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo){
 
 
 
-void Usuario::Remove_Emprestimo(){//test como parametro
+void Usuario::Remove_Emprestimo(int P_Emprestimo, int Q_Emprestimo){//test como parametro
 
     int verifica = 0,i = 0,tam = Empre.size();
 
     Emprestimo *test = new Emprestimo;
-    test->Add_Emprestimo();
+    test->Add_Emprestimo(P_Emprestimo, Q_Emprestimo);
 
     if(tam>0){
 

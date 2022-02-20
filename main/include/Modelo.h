@@ -30,7 +30,7 @@ class Modelo:public Assunto, public Obra, public Livro, public periodicos, publi
         void Add_ISBN();
 
         void Empresta_Livro(int Quant);
-        void Devolve_Livro();
+        void Devolve_Livro(int Quant);
 
         string Get_CDU();
         int Get_Quantidade();
@@ -39,6 +39,7 @@ class Modelo:public Assunto, public Obra, public Livro, public periodicos, publi
         Modelo Add_Modelo_R();
 
         void Print_Modelo();
+        void Print_Modelo_Completo();
 
     private:
         int Tipo_obra;//1)Livros 2)Periódicos 3)Trabalhos de conclusão 4)Relatórios 5)Mídias 6)Cartazes 7)Mapas

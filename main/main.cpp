@@ -22,7 +22,7 @@ int main()
     int op=0;
 
     acervo *A = new acervo();
-    A->Add_Usuario_root();
+    A->Add_Usuario_root();//só para criar o login inicial
 
 {
 
@@ -111,7 +111,8 @@ int main()
                 cout << "\n1) Printar Biblioteca";
                 cout << "\n2) Pegar Livro emprestado";
                 cout << "\n3) Printar livros emprestados";
-                cout << "\n4) Procura livros\n";
+                cout << "\n4) Procura livros";
+                cout << "\n5) Devolve livro";
 
                 fflush(stdin);
                 cin >> op;
@@ -136,6 +137,10 @@ int main()
                         A->Procura_livro();
                         break;
 
+                    case 5:
+                        A->Remove_1(poss);
+                        break;
+
                     default:
                         break;
                 }
@@ -155,7 +160,8 @@ int main()
                 cout << "\n4) Printar Usuarios";
                 cout << "\n5) Pegar Livro emprestado";
                 cout << "\n6) Printar livros emprestados";
-                cout << "\n7) Procura livros\n";
+                cout << "\n7) Procura livros";
+                cout << "\n8) Devolve livro\n";
 
                 fflush(stdin);
                 cin >> op;
@@ -191,6 +197,10 @@ int main()
                         A->Procura_livro();
                         break;
 
+                    case 8:
+                        A->Remove_1(poss);
+                        break;
+
                     default:
                         break;
 
@@ -199,20 +209,6 @@ int main()
             }while(op != 0);
 
         }
-
-        do{
-            if(sair == 0){
-
-                cout << "\n0) Fechar";
-                cout << "\n1) Tentar outro Login" << endl;
-                fflush(stdin);
-                cin >> op;
-
-                if(op == 0)
-                    sair = 1;
-            }
-
-        }while(op < 0 || op > 1);
 
     }while(sair != 1);
 

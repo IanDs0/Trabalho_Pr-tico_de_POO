@@ -22,7 +22,7 @@ class Usuario: public Emprestimo
         void Add_Pessoa_Procura();
 
         void Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo);
-        void Remove_Emprestimo();//parametro
+        void Remove_Emprestimo(int P_Emprestimo, int Q_Emprestimo);//parametro
         vector<Emprestimo> Printa_Emprestimo();
 
         string Camufla_senha();

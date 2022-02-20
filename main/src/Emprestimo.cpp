@@ -13,16 +13,10 @@ void Emprestimo::Add_Parametro(Emprestimo Emp){
 
 }
 
-void Emprestimo::Add_Emprestimo(){
+void Emprestimo::Add_Emprestimo(int P_Emprestimo, int Q_Emprestimo){
 
-    fflush(stdin);
-    cout << "\nPos: ";
-    cin >> this->Poss_Emprestimo;
-    fflush(stdin);
-
-    cout << "\nQuantidade: ";
-    cin >> this->Quantidade_Emprestimo;
-    fflush(stdin);
+    this->Poss_Emprestimo = P_Emprestimo;
+    this->Quantidade_Emprestimo = Q_Emprestimo;
 
 }
 

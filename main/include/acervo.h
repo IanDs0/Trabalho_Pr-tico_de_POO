@@ -32,8 +32,7 @@ class acervo: public Modelo, public Usuario, public Emprestimo
         int Procura_Emprestimo();
         void Procura_livro();//add novos tipos de busca/////////////
 
-        void Remove_1(int pos);//terminar
-        int Procura_Usuarios(int pos);//terminar
+        void Remove_1(int pos);//É o devolve
 
     private:
 

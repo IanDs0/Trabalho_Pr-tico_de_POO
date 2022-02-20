@@ -115,7 +115,7 @@ void Modelo::Add_Modelo(){
     }while(i<1 || i>7);
 
     this->Tipo_obra=i;
-/*
+
     cout << endl;
 
     Add_Autor();
@@ -126,7 +126,6 @@ void Modelo::Add_Modelo(){
 
     Add_Assunto();
 
-*/
     Add_CDU();
 
     cout << "Digite a quantidade desta obra: ";
@@ -190,6 +189,30 @@ void Modelo::Print_Modelo(){
 
     cout<<"\n";
 	cout << "\n\t\t\tCDU:  " << CDU << endl;
+}
+
+void Modelo::Print_Modelo_Completo(){
+
+    int i=1;
+
+    cout<<"\n\n\n";
+
+    for(Na = Nome_autor.begin(); Na!=Nome_autor.end();Na++){
+        cout << i << ". Autor(a): " << *Na <<".  ";
+        ++i;
+	}
+
+	cout<<"\n";
+	Print_Obra();
+
+	cout<<"\n";
+    cout << "ISBN: " << ISBN << endl;
+
+    cout<<"\n";
+    Print_Assunto();
+
+    cout<<"\n";
+	cout << "\n\t\t\tCDU:  " << CDU << endl;
 
 	cout<<"\n";
 	cout << "\nQuantidade:  " << Quantidade << endl;
@@ -223,7 +246,6 @@ void Modelo::Print_Modelo(){
 
 string Modelo::Get_CDU(){
 
-    cout << "CDU:  " << CDU << endl;
     return CDU;
 
 }
@@ -235,6 +257,6 @@ int Modelo::Get_Quantidade(){
 void Modelo::Empresta_Livro(int Quant){
     this->Quantidade -= Quant;
 }
-void Modelo::Devolve_Livro(){
-    this->Quantidade += 1;
+void Modelo::Devolve_Livro(int Quant){
+    this->Quantidade += Quant;
 }
