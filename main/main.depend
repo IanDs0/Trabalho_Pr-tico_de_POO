@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1643848747 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
+1645332409 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\acervo.cpp
 	"acervo.h"
 
-1643848747 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
+1645327599 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\acervo.h
 	"Modelo.h"
 	"Usuario.h"
 	"Emprestimo.h"
@@ -33,16 +33,23 @@
 	<string>
 	<iostream>
 
-1643848747 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
+1645331953 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\modelo.cpp
 	"Modelo.h"
 
-1643848747 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
+1645331774 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\modelo.h
 	<string>
 	<list>
 	<iostream>
 	"Obra.h"
 	"Assunto.h"
 	"Modelo.h"
+	"Livro.h"
+	"Periodicos.h"
+	"Trabalhos.h"
+	"relatorio.h"
+	"midias.h"
+	"cartaz.h"
+	"mapa.h"
 
 1643848747 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\assunto.cpp
 	"Assunto.h"
@@ -72,4 +79,53 @@
 
 1643848747 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\emprestimo.cpp
 	"Emprestimo.h"
+
+1645327000 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\livro.h
+	<iostream>
+	<string>
+
+1645327245 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\periodicos.h
+	<iostream>
+	<string>
+
+1645327524 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\livro.cpp
+	"Livro.h"
+
+1645326904 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\periodicos.cpp
+	"Periodicos.h"
+
+1645330096 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\trabalhos.h
+	<iostream>
+	<string>
+
+1645327722 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\trabalhos.cpp
+	"Trabalhos.h"
+
+1645327238 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\relatorio.h
+	<iostream>
+	<string>
+
+1645327256 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\midias.h
+	<iostream>
+	<string>
+
+1645327273 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\cartaz.h
+	<iostream>
+	<string>
+
+1645327263 c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\include\mapa.h
+	<iostream>
+	<string>
+
+1645328234 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\cartaz.cpp
+	"cartaz.h"
+
+1645328101 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\midias.cpp
+	"midias.h"
+
+1645327928 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\relatorio.cpp
+	"relatorio.h"
+
+1645328348 source:c:\users\ianha\desktop\trabalho_pr-tico_de_poo\main\src\mapa.cpp
+	"mapa.h"
 

@@ -36,17 +36,31 @@
 		</Compiler>
 		<Unit filename="include/Assunto.h" />
 		<Unit filename="include/Emprestimo.h" />
+		<Unit filename="include/Livro.h" />
 		<Unit filename="include/Modelo.h" />
 		<Unit filename="include/Obra.h" />
+		<Unit filename="include/Periodicos.h" />
+		<Unit filename="include/Trabalhos.h" />
 		<Unit filename="include/Usuario.h" />
 		<Unit filename="include/acervo.h" />
+		<Unit filename="include/cartaz.h" />
+		<Unit filename="include/mapa.h" />
+		<Unit filename="include/midias.h" />
+		<Unit filename="include/relatorio.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Assunto.cpp" />
 		<Unit filename="src/Emprestimo.cpp" />
+		<Unit filename="src/Livro.cpp" />
 		<Unit filename="src/Modelo.cpp" />
 		<Unit filename="src/Obra.cpp" />
+		<Unit filename="src/Periodicos.cpp" />
+		<Unit filename="src/Trabalhos.cpp" />
 		<Unit filename="src/Usuario.cpp" />
 		<Unit filename="src/acervo.cpp" />
+		<Unit filename="src/cartaz.cpp" />
+		<Unit filename="src/mapa.cpp" />
+		<Unit filename="src/midias.cpp" />
+		<Unit filename="src/relatorio.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

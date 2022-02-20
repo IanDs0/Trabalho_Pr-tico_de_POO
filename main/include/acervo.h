@@ -27,7 +27,7 @@ class acervo: public Modelo, public Usuario, public Emprestimo
 
         int Procura_Usuario(int *p);//0)Não 1)Pessoa 2)Root
 
-        void Adiciona_1(int pos);//add novos tipos de busca///////////////
+        void Adiciona_1(int pos);// É o empresta
         void Printa_Emprestimo(int pos);
         int Procura_Emprestimo();
         void Procura_livro();//add novos tipos de busca/////////////

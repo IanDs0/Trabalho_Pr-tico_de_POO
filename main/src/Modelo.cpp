@@ -115,7 +115,7 @@ void Modelo::Add_Modelo(){
     }while(i<1 || i>7);
 
     this->Tipo_obra=i;
-
+/*
     cout << endl;
 
     Add_Autor();
@@ -126,7 +126,37 @@ void Modelo::Add_Modelo(){
 
     Add_Assunto();
 
+*/
     Add_CDU();
+
+    cout << "Digite a quantidade desta obra: ";
+    cin >> this->Quantidade;
+
+    switch(i){
+        case 1:
+            Livro::add();
+            break;
+        case 2:
+            periodicos::add();
+            break;
+        case 3:
+            Trabalhos::add();
+            break;
+        case 4:
+            relatorio::add();
+            break;
+        case 5:
+            midias::add();
+            break;
+        case 6:
+            cartaz::add();
+            break;
+        case 7:
+            mapa::add();
+            break;
+        default:
+            break;
+    }
 }
 
 Modelo Modelo::Add_Modelo_R(){
@@ -160,6 +190,35 @@ void Modelo::Print_Modelo(){
 
     cout<<"\n";
 	cout << "\n\t\t\tCDU:  " << CDU << endl;
+
+	cout<<"\n";
+	cout << "\nQuantidade:  " << Quantidade << endl;
+
+	switch(Tipo_obra){
+        case 1:
+            Livro::imprime();
+            break;
+        case 2:
+            periodicos::imprime();
+            break;
+        case 3:
+            Trabalhos::imprime();
+            break;
+        case 4:
+            relatorio::imprime();
+            break;
+        case 5:
+            midias::imprime();
+            break;
+        case 6:
+            cartaz::imprime();
+            break;
+        case 7:
+            mapa::imprime();
+            break;
+        default:
+            break;
+    }
 }
 
 string Modelo::Get_CDU(){
@@ -169,3 +228,13 @@ string Modelo::Get_CDU(){
 
 }
 
+int Modelo::Get_Quantidade(){
+    return Quantidade;
+}
+
+void Modelo::Empresta_Livro(int Quant){
+    this->Quantidade -= Quant;
+}
+void Modelo::Devolve_Livro(){
+    this->Quantidade += 1;
+}

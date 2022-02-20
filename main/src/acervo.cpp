@@ -39,7 +39,11 @@ void acervo::Add_Usuario_root(){
 
 void acervo::Print_Usuario(){
 
-    for(int i=0;i < Usuarios_Bi.size(); i++){
+    int tam,i;
+
+    tam = Usuarios_Bi.size();
+
+    for(i = 0;i < tam; i++){
 
         Usuarios_Bi[i].Print_Pessoa();
 
@@ -49,12 +53,14 @@ void acervo::Print_Usuario(){
 
 int acervo::Procura_Usuario(int *p){
 
-    int verifica=0;
+    int tam,i,verifica=0;
 
     Usuario *test = new Usuario();
     test->Add_Pessoa_Procura();
 
-    for(int i=0;i < Usuarios_Bi.size(); i++){
+    tam = Usuarios_Bi.size();
+
+    for(i=0;i < tam; i++){
 
         verifica = Usuarios_Bi[i].Procura_Usuario(test);
         *p = i;
@@ -69,7 +75,7 @@ int acervo::Procura_Usuario(int *p){
 }
 
 int acervo::Procura_Usuarios(int pos){//terminar
-
+    return 0;
 }
 
 void acervo::Remove_1(int pos){//terminar
@@ -132,14 +138,32 @@ int acervo::Procura_Emprestimo(){
 
 void acervo::Adiciona_1(int pos){
 
-    int quantidade = 0;
+    int Onde_livro,quantidade = 0,tem = -1,sair;
 
-    fflush(stdin);
-    cout << "\nDigite a quantidade: ";
-    cin >> quantidade;
+    do{
 
-    Usuarios_Bi[pos].Add_Emprestimo(Procura_Emprestimo(), quantidade);
+        if(tem>=0){
+            cout << "\nDigite 0 para sair: ";
+            fflush(stdin);
+            cin >> sair;
+            if(sair == 0)
+                return;
+        }
 
+        Onde_livro = Procura_Emprestimo();
+        tem = Biblioteca[Onde_livro].Get_Quantidade();
+
+    }while(tem <=0 );
+    do{
+        fflush(stdin);
+        cout << "\nDigite a quantidade: ";
+        cin >> quantidade;
+        cout << tem;
+    }while(quantidade > tem || quantidade < 0 );
+
+    Usuarios_Bi[pos].Add_Emprestimo(Onde_livro, quantidade);
+
+    Biblioteca[Onde_livro].Empresta_Livro(quantidade);
 }
 
 void acervo::Procura_livro(){
@@ -152,6 +176,8 @@ void acervo::Procura_livro(){
 
 void acervo::Printa_Emprestimo(int pos){
 
+    int tam,i;
+
     cout << "O usuário na poss: " << pos << endl;
 
     vector<Emprestimo> poss;
@@ -160,7 +186,9 @@ void acervo::Printa_Emprestimo(int pos){
 
     poss = Usuarios_Bi[pos].Printa_Emprestimo();
 
-    for(int i=0; i<poss.size() ;i++){
+    tam = poss.size();
+
+    for(i=0; i<tam ;i++){
 
         Biblioteca[poss[i].Get_poss()].Print_Modelo();
 
