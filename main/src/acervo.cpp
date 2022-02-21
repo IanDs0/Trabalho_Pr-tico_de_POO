@@ -120,7 +120,7 @@ void acervo::Remove_1(int pos){//terminar
             cout << "\nDigite a quantidade desta obra a ser devolvida: ";
             fflush(stdin);
             cin >> Quant;
-        }while(Quant > poss[Onde_livro].Get_quanti()+1 || Quant < 0);
+        }while(Quant > poss[Onde_livro].Get_quanti() || Quant < 0);
 
         Usuarios_Bi[pos].Remove_Emprestimo(poss[Onde_livro].Get_poss(), Quant);
         Biblioteca[poss[Onde_livro].Get_poss()].Devolve_Livro(Quant);
